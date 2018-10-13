@@ -65,9 +65,6 @@ public class DictionaryManagement {
         } catch (IOException ex) {
             Logger.getLogger(DictionaryManagement.class.getName()).log(Level.SEVERE, null, ex);
         }
-       catch (Exception e){
-             System.out.println("loi:"+e);
-         }
     }
     //xóa từ
     public void deleteWord(Dictionary d) {
