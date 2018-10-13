@@ -54,15 +54,16 @@ public class DictionaryManagement {
     }
     //đọc dữ liệu từ file
     public void insertFromFile(Dictionary d) {      
-        try (Scanner sca = new Scanner(new File("C:\\Users\\MANH HOANG\\Documents\\dictionaries.txt"))) {
-            while(sca.hasNextLine()){
-                String tu;
-                String nghia;
-                tu = sca.next();
-                nghia = sca.nextLine();
-                Word words = new Word(tu,nghia);
+        String line;
+        try(Scanner sc = new Scanner(new File("C:\\Users\\MANH HOANG\\Documents\\dictionaries.txt"))) {
+            while (sc.hasNext()){
+                line=sc.nextLine();
+                String [] a= line.split("\t");
+                Word words = new Word(a[0],a[1]);
                 d.list.add(words);
             }
+        } catch (IOException ex) {
+            Logger.getLogger(DictionaryManagement.class.getName()).log(Level.SEVERE, null, ex);
         }
        catch (Exception e){
              System.out.println("loi:"+e);
