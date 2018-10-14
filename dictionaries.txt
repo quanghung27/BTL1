@@ -14,4 +14,8 @@ four	so 4
 five	so 5
 kute	de thuong
 fire	lua
-
+map	ban do
+screen	man hinh
+music	nhac
+camera	chup anh
+settings	cai dat
