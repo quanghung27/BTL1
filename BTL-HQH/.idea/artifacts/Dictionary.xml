@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Dictionary">
+    <output-path>D:/out/artifacts/Dictionary</output-path>
+    <root id="root">
+      <element id="archive" name="Dictionary.jar">
+        <element id="module-output" name="Dictionary" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="D:/src/Dictionary02/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
