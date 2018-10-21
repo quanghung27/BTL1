@@ -7,16 +7,16 @@ public class Dictionarys {
 
     public void menu() {
         System.out.printf("\n DICTIONARY");
-	System.out.printf("\n- 1. them tu va in ket qua");
-	System.out.printf("\n- 2. tim 1 tu");
-        System.out.printf("\n- 3. tim nhieu tu lien quan");
-	System.out.printf("\n- 4. xoa tu");
-	System.out.printf("\n- 5. lay du lieu tu trong file");
-	System.out.printf("\n- 6. xuat du lieu ra file");
-        System.out.printf("\n- 7. sua tu");
-        System.out.printf("\n- 8. phat am tu");
-        System.out.printf("\n- 9. in tat ca cac tu");
-	System.out.printf("\n nhap lua chon:");
+	System.out.printf("\n- 1. Them tu va in ket qua");
+	System.out.printf("\n- 2. Tim 1 tu");
+        System.out.printf("\n- 3. Tim nhieu tu lien quan");
+	System.out.printf("\n- 4. Xoa tu");
+	System.out.printf("\n- 5. Lay du lieu tu trong file");
+	System.out.printf("\n- 6. Xuat du lieu ra file");
+        System.out.printf("\n- 7. Sua tu");
+        System.out.printf("\n- 8. Phat am tu");
+        System.out.printf("\n- 9. In tat ca cac tu");
+	System.out.printf("\n Nhap lua chon:");
     }
     
     public static void main(String[] args) {
