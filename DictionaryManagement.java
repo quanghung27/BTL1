@@ -13,22 +13,19 @@ import com.sun.speech.freetts.VoiceManager;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-/**
- *
- * @author MANH HOANG
- */
+
 public class DictionaryManagement {
     Dictionary d = new Dictionary();
     Scanner scan = new Scanner(System.in);
     //hàm thêm từ
     public void insertFromCommandline(Dictionary d) {
-        System.out.println("nhap so tu can them:");
+        System.out.println("Nhap so tu can them:");
         int s1 = scan.nextInt();
         scan.nextLine();
         for(int i=0;i<s1;i++) {
             String tu;
             String nghia;
-            System.out.println("nhap tu moi:");
+            System.out.println("Nhap tu moi:");
             tu= scan.nextLine().toLowerCase();           
             System.out.println("Nhap nghia moi:");
             nghia= scan.nextLine().toLowerCase();          
@@ -38,7 +35,7 @@ public class DictionaryManagement {
     }
     //hàm tìm 1 từ
     public void dictionaryLookup(Dictionary d) {
-        System.out.println("nhap tu can tim:");
+        System.out.println("Nhap tu can tim:");
         String tucamtim =scan.next().toLowerCase();
         System.out.println(dictionaryLookup(d, tucamtim));
     }
@@ -63,19 +60,19 @@ public class DictionaryManagement {
     public void deleteWord(Dictionary d) {
         String tucanxoa;
         int test=1;
-        System.out.println("nhap tu can xoa:");
+        System.out.println("Nhap tu can xoa:");
         tucanxoa=scan.next().toLowerCase();
         for(int i=0;i<d.list.size();i++) {
             if(d.list.get(i).getWord_target().equalsIgnoreCase(tucanxoa))
             {
                 d.list.remove(d.list.get(i));
-                System.out.println("xoa thanh cong.");
+                System.out.println("Xoa tu thanh cong.");
                 test++;
             }
         }
         if(test==1)
         {
-            System.out.println("khong tim thay tu can xoa.");
+            System.out.println("Khong tim thay tu can xoa.");
         }
     }
     //sửa từ
@@ -84,25 +81,25 @@ public class DictionaryManagement {
         String tu;
         String nghia;
         int test=1;
-        System.out.println("nhap tu can sua:");
+        System.out.println("Nhap tu can sua:");
         tucansua=scan.next().toLowerCase();
         for(int i=0;i<d.list.size();i++){
             if(d.list.get(i).getWord_target().equalsIgnoreCase(tucansua))
             {
-                System.out.println("sua tu.");
-                System.out.println("tu moi:");
+                System.out.println("Sua tu.");
+                System.out.println("Tu moi:");
                 tu=scan.next().toLowerCase();
-                System.out.println("nghia moi:");
+                System.out.println("Nghia moi:");
                 nghia=scan.next().toLowerCase();
                 d.list.get(i).setWord_target(tu);
                 d.list.get(i).setWord_explain(nghia);
-                System.out.println("sua thanh cong.");
+                System.out.println("Sua thanh cong.");
                 test++;
             }
         }
         if(test==1)
         {
-            System.out.println("khong tim thay tu can sua.");
+            System.out.println("Khong tim thay tu can sua.");
         }
     }
     //hàm xuất dữ liệu ra file
@@ -127,7 +124,7 @@ public class DictionaryManagement {
         }
         catch(Exception e)
         {
-            return "loi:"+e;
+            return "Loi:"+e;
         }
     }
     Voice voice;
@@ -140,7 +137,7 @@ public class DictionaryManagement {
         voice.speak(str);
     }
     public void Speaks() {
-        System.out.println("moi nhap tu can phat am:");
+        System.out.println("Moi nhap tu can phat am:");
         String str = scan.nextLine().toLowerCase();
         speaks(str);
     }
