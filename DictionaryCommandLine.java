@@ -30,7 +30,7 @@ public class DictionaryCommandLine extends DictionaryManagement {
         String tucantim;
         int ab;
         int test=1;
-        System.out.println("nhap tu can tim:");
+        System.out.println("Nhap tu can tim:");
         tucantim=scan.next().toLowerCase();
         for (int i = 0; i < d.list.size(); i++) {
             int j=i+1;
@@ -42,7 +42,7 @@ public class DictionaryCommandLine extends DictionaryManagement {
         }
         if(test==1)
         {
-            System.out.println("khong tim thay tu.");
+            System.out.println("Khong tim thay tu!");
         }
     }
 }
